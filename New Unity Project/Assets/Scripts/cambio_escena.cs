@@ -15,6 +15,7 @@ public class cambio_escena : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Return)) 
         {
             SceneManager.LoadScene("argame");
+
         }
     }
 }
