@@ -7,8 +7,8 @@ public class nombreingresado : MonoBehaviour
 {
     public TMPro.TMP_Text nombre;
 
-    public void SetInputText(string inputText)
+    private void Start()
     {
-        nombre.text = inputText;
+        nombre.text = PlayerPrefs.GetString("nombre");
     }
 }
