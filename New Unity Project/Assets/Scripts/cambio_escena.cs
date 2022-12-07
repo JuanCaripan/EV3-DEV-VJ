@@ -5,17 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class cambio_escena : MonoBehaviour
 {
-    private void Onclick()
+    public void LoadScene(string sceneName)
     {
-        SceneManager.LoadScene("argame");
-    }
-
-    private void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.Return)) 
-        {
-            SceneManager.LoadScene("argame");
-
-        }
+        SceneManager.LoadScene(sceneName);
     }
 }
